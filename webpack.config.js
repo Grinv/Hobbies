@@ -1,4 +1,5 @@
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -16,7 +17,31 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      }, {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      }, {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'img/[hash].[ext]'
+            }
+          }
+        ]
       }
+    ]
+  },
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          output: {
+            comments: false
+          }
+        }
+      })
     ]
   }
 };

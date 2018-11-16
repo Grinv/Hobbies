@@ -1,0 +1,44 @@
+.notificationList {
+  margin: 0;
+  padding: 0;
+}
+
+.notificationListItem {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.notificationListItem:last-child {
+  margin-bottom: 0;
+}
+
+.notificatioHobby {
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+.notificationMessage {
+  color: #449F1B;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.notificationMessageImg {
+  padding-right: 5px;
+}
+
+.endingSpace {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 16px;
+}
+
+.endingSpace img {
+  height: 100%;
+  width: 100%;
+}

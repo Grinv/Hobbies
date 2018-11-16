@@ -1,0 +1,45 @@
+.container {
+  font-family: sans-serif;
+  padding-top: 17px;
+  padding-bottom: 23px;
+}
+
+h1.title {
+  font-size: 18px;
+  border-bottom: 2px solid #666;
+  color: #333;
+  padding-bottom: 5px;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  position: relative;
+}
+
+.subtitle:after {
+  border-top: 1px dotted #666;
+  content: "";
+  margin: 0 auto; /* this centers the line to the full width specified */
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.subtitle h2 {
+  font-size: 16px;
+  color: #333;
+  background: white;
+  display: inline;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.content {
+  margin-top: 26px;
+}

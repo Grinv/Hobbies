@@ -1,0 +1,10 @@
+.openListButton {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 13px;
+  color: #EB722E;
+  border-bottom: 1px solid #EB722E;
+  margin-top: 15px;
+}
